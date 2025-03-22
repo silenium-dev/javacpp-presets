@@ -51,8 +51,8 @@ import org.bytedeco.javacpp.tools.InfoMapper;
             "<libavutil/opt.h>", "<libavutil/pixdesc.h>", "<libavutil/imgutils.h>", "<libavutil/downmix_info.h>", "<libavutil/stereo3d.h>",
             "<libavutil/ffversion.h>", "<libavutil/motion_vector.h>", "<libavutil/fifo.h>", "<libavutil/audio_fifo.h>", "<libavutil/hwcontext.h>",
             /*"<libavutil/hwcontext_cuda.h>", "<libavutil/hwcontext_d3d11va.h>", "<libavutil/hwcontext_dxva2.h>", "<libavutil/hwcontext_drm.h>",
-            "<libavutil/hwcontext_mediacodec.h>", "<libavutil/hwcontext_qsv.h>", "<libavutil/hwcontext_vaapi.h>", "<libavutil/hwcontext_vdpau.h>",
-            "<libavutil/hwcontext_videotoolbox.h>",*/ "<libavutil/adler32.h>", "<libavutil/aes.h>", "<libavutil/aes_ctr.h>", "<libavutil/base64.h>",
+            "<libavutil/hwcontext_mediacodec.h>", "<libavutil/hwcontext_qsv.h>", "<libavutil/hwcontext_vdpau.h>", "<libavutil/hwcontext_videotoolbox.h>",*/
+            "<libavutil/hwcontext_vaapi.h>", "<libavutil/adler32.h>", "<libavutil/aes.h>", "<libavutil/aes_ctr.h>", "<libavutil/base64.h>",
             "<libavutil/blowfish.h>", "<libavutil/cast5.h>", "<libavutil/camellia.h>", "<libavutil/crc.h>", "<libavutil/des.h>", "<libavutil/lfg.h>",
             "<libavutil/hmac.h>", "<libavutil/md5.h>", "<libavutil/rc4.h>", "<libavutil/ripemd.h>", "<libavutil/tea.h>", "<libavutil/twofish.h>",
             "<libavutil/sha.h>", "<libavutil/sha512.h>", "<libavutil/xtea.h>", "<libavutil/avstring.h>", "<libavutil/bprint.h>", "<libavutil/common.h>",
