@@ -24,63 +24,63 @@ jobs:
 #      matrix:
 #        ext: ["", -gpl]
 #    steps:
-#      - uses: bytedeco/javacpp-presets/.github/actions/deploy-ubuntu@actions
+#      - uses: silenium-dev/javacpp-presets/.github/actions/deploy-ubuntu@master
   android-arm64:
     runs-on: ubuntu-22.04
     strategy:
       matrix:
         ext: ["", -gpl]
     steps:
-      - uses: bytedeco/javacpp-presets/.github/actions/deploy-ubuntu@actions
+      - uses: silenium-dev/javacpp-presets/.github/actions/deploy-ubuntu@master
 #  android-x86:
 #    runs-on: ubuntu-22.04
 #    strategy:
 #      matrix:
 #        ext: ["", -gpl]
 #    steps:
-#      - uses: bytedeco/javacpp-presets/.github/actions/deploy-ubuntu@actions
+#      - uses: silenium-dev/javacpp-presets/.github/actions/deploy-ubuntu@master
   android-x86_64:
     runs-on: ubuntu-22.04
     strategy:
       matrix:
         ext: ["", -gpl]
     steps:
-      - uses: bytedeco/javacpp-presets/.github/actions/deploy-ubuntu@actions
+      - uses: silenium-dev/javacpp-presets/.github/actions/deploy-ubuntu@master
 #  linux-armhf:
 #    runs-on: ubuntu-22.04
 #    strategy:
 #      matrix:
 #        ext: ["", -gpl]
 #    steps:
-#      - uses: bytedeco/javacpp-presets/.github/actions/deploy-ubuntu@actions
+#      - uses: silenium-dev/javacpp-presets/.github/actions/deploy-ubuntu@master
   linux-arm64:
     runs-on: ubuntu-22.04
     strategy:
       matrix:
         ext: ["", -gpl]
     steps:
-      - uses: bytedeco/javacpp-presets/.github/actions/deploy-ubuntu@actions
+      - uses: silenium-dev/javacpp-presets/.github/actions/deploy-ubuntu@master
 #  linux-ppc64le:
 #    runs-on: ubuntu-22.04
 #    strategy:
 #      matrix:
 #        ext: ["", -gpl]
 #    steps:
-#      - uses: bytedeco/javacpp-presets/.github/actions/deploy-ubuntu@actions
+#      - uses: silenium-dev/javacpp-presets/.github/actions/deploy-ubuntu@master
 #  linux-x86:
 #    runs-on: ubuntu-22.04
 #    strategy:
 #      matrix:
 #        ext: ["", -gpl]
 #    steps:
-#      - uses: bytedeco/javacpp-presets/.github/actions/deploy-ubuntu@actions
+#      - uses: silenium-dev/javacpp-presets/.github/actions/deploy-ubuntu@master
   linux-x86_64:
     runs-on: ubuntu-22.04
     strategy:
       matrix:
         ext: ["", -gpl]
     steps:
-      - uses: bytedeco/javacpp-presets/.github/actions/deploy-ubuntu@actions
+      - uses: silenium-dev/javacpp-presets/.github/actions/deploy-ubuntu@master
   macosx-arm64:
     runs-on: macos-13
     strategy:
