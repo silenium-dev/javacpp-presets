@@ -12,7 +12,6 @@ runs:
         echo "</settings>" >> $HOME/.m2/settings.xml
         cat $HOME/.m2/settings.xml
         cat pom.xml
-        exit 1
     - name: Install environment
       shell: bash
       env:
