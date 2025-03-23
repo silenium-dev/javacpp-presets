@@ -24,63 +24,63 @@ jobs:
 #      matrix:
 #        ext: ["", -gpl]
 #    steps:
-#      - uses: silenium-dev/javacpp-presets/.github/actions/deploy-ubuntu@master
+#      - uses: ./.github/actions/deploy-ubuntu
   android-arm64:
     runs-on: ubuntu-22.04
     strategy:
       matrix:
         ext: ["", -gpl]
     steps:
-      - uses: silenium-dev/javacpp-presets/.github/actions/deploy-ubuntu@master
+      - uses: ./.github/actions/deploy-ubuntu
 #  android-x86:
 #    runs-on: ubuntu-22.04
 #    strategy:
 #      matrix:
 #        ext: ["", -gpl]
 #    steps:
-#      - uses: silenium-dev/javacpp-presets/.github/actions/deploy-ubuntu@master
+#      - uses: ./.github/actions/deploy-ubuntu
   android-x86_64:
     runs-on: ubuntu-22.04
     strategy:
       matrix:
         ext: ["", -gpl]
     steps:
-      - uses: silenium-dev/javacpp-presets/.github/actions/deploy-ubuntu@master
+      - uses: ./.github/actions/deploy-ubuntu
 #  linux-armhf:
 #    runs-on: ubuntu-22.04
 #    strategy:
 #      matrix:
 #        ext: ["", -gpl]
 #    steps:
-#      - uses: silenium-dev/javacpp-presets/.github/actions/deploy-ubuntu@master
+#      - uses: ./.github/actions/deploy-ubuntu
   linux-arm64:
     runs-on: ubuntu-22.04
     strategy:
       matrix:
         ext: ["", -gpl]
     steps:
-      - uses: silenium-dev/javacpp-presets/.github/actions/deploy-ubuntu@master
+      - uses: ./.github/actions/deploy-ubuntu
 #  linux-ppc64le:
 #    runs-on: ubuntu-22.04
 #    strategy:
 #      matrix:
 #        ext: ["", -gpl]
 #    steps:
-#      - uses: silenium-dev/javacpp-presets/.github/actions/deploy-ubuntu@master
+#      - uses: ./.github/actions/deploy-ubuntu
 #  linux-x86:
 #    runs-on: ubuntu-22.04
 #    strategy:
 #      matrix:
 #        ext: ["", -gpl]
 #    steps:
-#      - uses: silenium-dev/javacpp-presets/.github/actions/deploy-ubuntu@master
+#      - uses: ./.github/actions/deploy-ubuntu
   linux-x86_64:
     runs-on: ubuntu-22.04
     strategy:
       matrix:
         ext: ["", -gpl]
     steps:
-      - uses: silenium-dev/javacpp-presets/.github/actions/deploy-ubuntu@master
+      - uses: ./.github/actions/deploy-ubuntu
   macosx-arm64:
     runs-on: macos-13
     strategy:
