@@ -2,6 +2,17 @@ name: Deploy on Ubuntu
 runs:
   using: composite
   steps:
+    - name: Debug
+      shell: bash
+      run: |
+        mkdir -p $HOME/.m2
+        echo "<settings>" > $HOME/.m2/settings.xml
+        echo "<mirrors><mirror><id>google-maven-central</id><name>GCS Maven Central mirror</name><url>https://maven-central.storage-download.googleapis.com/maven2/</url><mirrorOf>central</mirrorOf></mirror></mirrors>" >> $HOME/.m2/settings.xml
+        echo "<servers><server><id>silenium-dev-repository-snapshots</id><username>$CI_DEPLOY_USERNAME</username><password>$CI_DEPLOY_PASSWORD</password></server><server><id>silenium-dev-repository-staging</id><username>$CI_DEPLOY_USERNAME</username><password>$CI_DEPLOY_PASSWORD</password></server></servers>" >> $HOME/.m2/settings.xml
+        echo "</settings>" >> $HOME/.m2/settings.xml
+        cat $HOME/.m2/settings.xml
+        cat pom.xml
+        exit 1
     - name: Install environment
       shell: bash
       env:
