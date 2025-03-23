@@ -127,4 +127,4 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v4
-      - uses: bytedeco/javacpp-presets/.github/actions/redeploy@actions
+      - uses: ./.github/actions/redeploy
