@@ -45,6 +45,7 @@ public class avformat implements InfoMapper {
     public void map(InfoMap infoMap) {
         infoMap.put(new Info("AVDeviceInfoList", "AVDeviceCapabilitiesQuery", "AVBPrint", "URLContext", "FFFrac").cast().pointerTypes("Pointer"))
                .put(new Info("LIBAVFORMAT_VERSION").cppTypes())
+               .put(new Info("AVFrame").skip())
                .put(new Info("LIBAVFORMAT_VERSION_INT", "LIBAVFORMAT_IDENT", "AVPROBE_SCORE_RETRY", "AVPROBE_SCORE_STREAM_RETRY").translate(false))
                .put(new Info("FF_API_LAVF_PRIV_OPT", "FF_API_COMPUTE_PKT_FIELDS2", "FF_API_AVIOCONTEXT_WRITTEN",
                              "FF_HLS_TS_OPTIONS", "FF_HTTP_CACHE_REDIRECT_DEFAULT", "FF_API_GET_END_PTS", "FF_API_AVIODIRCONTEXT",

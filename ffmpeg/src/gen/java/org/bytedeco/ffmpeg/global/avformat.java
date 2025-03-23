@@ -2227,8 +2227,6 @@ public static final int AVSTREAM_INIT_IN_INIT_OUTPUT =  1;
  *
  * See av_interleaved_write_uncoded_frame() for details.
  */
-@NoException public static native int av_write_uncoded_frame(AVFormatContext s, int stream_index,
-                           AVFrame frame);
 
 /**
  * Write an uncoded frame to an output media file.
@@ -2246,8 +2244,6 @@ public static final int AVSTREAM_INIT_IN_INIT_OUTPUT =  1;
  *
  * @return  >=0 for success, a negative code on error
  */
-@NoException public static native int av_interleaved_write_uncoded_frame(AVFormatContext s, int stream_index,
-                                       AVFrame frame);
 
 /**
  * Test whether a muxer supports uncoded frame.
@@ -2717,8 +2713,6 @@ public static final int AV_FRAME_FILENAME_FLAGS_MULTIPLE = 1;
  * @param frame the frame with the aspect ratio to be determined
  * @return the guessed (valid) sample_aspect_ratio, 0/1 if no idea
  */
-@NoException public static native @ByVal AVRational av_guess_sample_aspect_ratio(AVFormatContext format, AVStream stream,
-                                        AVFrame frame);
 
 /**
  * Guess the frame rate, based on both the container and codec information.
@@ -2728,8 +2722,6 @@ public static final int AV_FRAME_FILENAME_FLAGS_MULTIPLE = 1;
  * @param frame the frame for which the frame rate should be determined, may be NULL
  * @return the guessed (valid) frame rate, 0/1 if no idea
  */
-@NoException public static native @ByVal AVRational av_guess_frame_rate(AVFormatContext ctx, AVStream stream,
-                               AVFrame frame);
 
 /**
  * Check if the stream st contained in s is matched by the stream specifier

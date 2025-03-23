@@ -910,7 +910,6 @@ public static final int
  *
  * @return  >= 0 in for success, a negative AVERROR code for failure.
  */
-@NoException public static native int av_buffersink_get_frame_flags(AVFilterContext ctx, AVFrame frame, int flags);
 
 /**
  * Tell av_buffersink_get_buffer_ref() to read video/samples buffer
@@ -975,7 +974,6 @@ public static final int AV_BUFFERSINK_FLAG_NO_REQUEST = 2;
  *         - AVERROR_EOF if there will be no more output frames on this sink.
  *         - A different negative AVERROR code in other failure cases.
  */
-@NoException public static native int av_buffersink_get_frame(AVFilterContext ctx, AVFrame frame);
 
 /**
  * Same as av_buffersink_get_frame(), but with the ability to specify the number
@@ -994,7 +992,6 @@ public static final int AV_BUFFERSINK_FLAG_NO_REQUEST = 2;
  * \warning do not mix this function with av_buffersink_get_frame(). Use only one or
  * the other with a single sink, not both.
  */
-@NoException public static native int av_buffersink_get_samples(AVFilterContext ctx, AVFrame frame, int nb_samples);
 
 /**
  * \}
@@ -1106,7 +1103,6 @@ public static final int
  * This function is equivalent to av_buffersrc_add_frame_flags() with the
  * AV_BUFFERSRC_FLAG_KEEP_REF flag.
  */
-@NoException public static native int av_buffersrc_write_frame(AVFilterContext ctx, @Const AVFrame frame);
 
 /**
  * Add a frame to the buffer source.
@@ -1126,7 +1122,6 @@ public static final int
  * This function is equivalent to av_buffersrc_add_frame_flags() without the
  * AV_BUFFERSRC_FLAG_KEEP_REF flag.
  */
-@NoException public static native int av_buffersrc_add_frame(AVFilterContext ctx, AVFrame frame);
 
 /**
  * Add a frame to the buffer source.
@@ -1143,8 +1138,6 @@ public static final int
  * @return            >= 0 in case of success, a negative AVERROR code
  *                    in case of failure
  */
-@NoException public static native int av_buffersrc_add_frame_flags(AVFilterContext buffer_src,
-                                 AVFrame frame, int flags);
 
 /**
  * Close the buffer source after EOF.
