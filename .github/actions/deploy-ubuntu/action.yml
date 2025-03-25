@@ -345,7 +345,7 @@ runs:
           fi
         fi
         df -h
-        ls -l $CI_DEPLOY_MODULE/platform/cppbuild/$CI_DEPLOY_PLATFORM${{ matrix.ext }}/lib/
+        ls -l javacpp-presets/$CI_DEPLOY_MODULE/platform/cppbuild/$CI_DEPLOY_PLATFORM${{ matrix.ext }}/lib/
 
     - name: Clean up
       shell: bash
